@@ -5,6 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  enforcementAction: dryrun
   match:
     kinds:
       - apiGroups: [""]
